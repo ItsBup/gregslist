@@ -23,7 +23,7 @@ export class House{
       src="${this.imgUrl}"
       alt="">
     <div class="p-2">
-      <h3>${this.location} <i style="color: ${this.color};" class="mdi mdi-home"></i></h3>
+      <h3>${this.location} <i style="color: ${this.color};" class="mdi mdi-home"></i> SqFt: ${this.sqft}</h3>
       <p>Bedrooms:${this.bedrooms} Bathrooms:${this.bathrooms} Total Price:$${this.price}</p>
       <button onclick="app.HousesController.removeHouse('${this.id}')" class="btn btn-danger" title="delete this listing forever"><i class="mdi mdi-delete-forever"></i></button>
     </div>

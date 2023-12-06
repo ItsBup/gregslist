@@ -6,29 +6,29 @@ import { loadState, saveState } from "../utils/Store.js";
 
 
 class HouseService{
-  // createHouse( formData){
-  //   let createdHouse = new House(formData)
-  //   console.log('created a house', createdHouse);
-  //   AppState.houses.push(createdHouse)
-  //   this.saveHouses()
-  // }
+  createHouse( formData){
+    let createdHouse = new House(formData)
+    console.log('created a house', createdHouse);
+    AppState.houses.push(createdHouse)
+    this.saveHouses()
+  }
 
-  // removeHouse(houseId){
-  //   const indexToRemove = AppState.houses.findIndex(house => house.id == houseId)
-  //   if(indexToRemove > -1){
-  //     AppState.houses.splice(indexToRemove,1)
-  //     this.saveHouses()
-  //   }
-  // }
+  removeHouse(houseId){
+    const indexToRemove = AppState.houses.findIndex(house => house.id == houseId)
+    if(indexToRemove > -1){
+      AppState.houses.splice(indexToRemove,1)
+      this.saveHouses()
+    }
+  }
 
-  // saveHouses(){
-  //   saveState('houses', AppState.houses)
-  // }
+  saveHouses(){
+    saveState('house', AppState.houses)
+  }
 
-  // loadHouses(){
-  //   let loadedHouses = loadState('houses', [House]) // the [] tell loadState we ar pulling out an array, with  HOUSE inside
-  //   AppState.houses = loadedHouses
-  // }
+  loadHouses(){
+    let loadedHouses = loadState('house', [House])
+    AppState.houses = loadedHouses
+  }
 
 }
 
