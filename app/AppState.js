@@ -34,7 +34,7 @@ class ObservableAppState extends EventEmitter {
       isElectric: false
     })
   ]
-  
+
   houses = [
     new House({
       bedrooms: 12,
@@ -44,7 +44,16 @@ class ObservableAppState extends EventEmitter {
       imgUrl: 'https://i.insider.com/58e24537dd0895e67c8b4a05?width=1200&format=jpeg',
       price: 2,
       sqft: 10000
-    })
+    }),
+    new House({
+      bedrooms: 1,
+      bathrooms: 0,
+      location: 'Wherever you want it baby',
+      color: 'Pasty & Bland',
+      imgUrl: 'https://i.etsystatic.com/35431139/r/il/e593a4/4996386548/il_794xN.4996386548_pihp.jpg',
+      price: 20000000000000000,
+      sqft: 3
+    }),
   ]
 }
 

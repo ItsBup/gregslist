@@ -35,7 +35,8 @@ export const router = new Router([
   },
   {
     path: '#/houses',
-    view: `You are on the houses 🏠 page`
+    controllers: [HousesController],
+    view: `You are on the houses 🏠 page` //app/views/HouseView/html
   },
   {
     path: '#/jobs',
