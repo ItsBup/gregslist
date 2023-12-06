@@ -25,8 +25,6 @@ export class HousesController{
     event.preventDefault()
     const form = event.target 
     const formData = getFormData(form)
-    // formData.bedroom = parseInt(formData.bedroom)
-    // formData.bathroom = parseInt(formData.bathroom)
     houseService.createHouse(formData)
     form.reset()
   }

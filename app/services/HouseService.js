@@ -22,11 +22,11 @@ class HouseService{
   }
 
   saveHouses(){
-    saveState('house', AppState.houses)
+    saveState('houses', AppState.houses)
   }
 
   loadHouses(){
-    let loadedHouses = loadState('house', [House])
+    let loadedHouses = loadState('houses', [House])
     AppState.houses = loadedHouses
   }
 
