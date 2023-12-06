@@ -1,4 +1,5 @@
 import { Car } from './models/Car.js'
+import { House } from './models/House.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -33,6 +34,20 @@ class ObservableAppState extends EventEmitter {
       isElectric: false
     })
   ]
+  
+  houses = [
+    new House({
+      bedrooms: 12,
+      bathrooms: 1,
+      location: 'Nebraska',
+      color: 'pink',
+      imgUrl: 'https://i.insider.com/58e24537dd0895e67c8b4a05?width=1200&format=jpeg',
+      price: 2,
+      sqft: 10000
+    })
+  ]
 }
+
+
 
 export const AppState = createObservableProxy(new ObservableAppState())
