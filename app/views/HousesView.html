@@ -3,6 +3,10 @@
 </section>
   <form onsubmit="app.HousesController.createHouse()"  class="row bg-white shadow mb-5 rounded">
     <div class="col-12 text-center my-2">List Your Home</div>
+    <div class="mb-3 col-12">
+      <label for="house-location">Full Address</label>
+      <input class="form-control" required name="location" type="text" minlength="3" maxlength="69" placeholder="1617 Ho Hum Road, Carefree, Arizona....">
+    </div>
     <div class="mb-3 col-4">
       <label for="house-bedrooms">Bedrooms</label>
       <input class="form-control" required name="bedroom" type="number" min="0" max="100" value="2">
@@ -12,7 +16,7 @@
       <input class="form-control" required name="bathroom" type="number" min="0" max="100" value="2">
     </div>
     <div class="mb-3 col-4">
-      <label for="house-sqft">Bathrooms</label>
+      <label for="house-sqft">Total Square Feet</label>
       <input class="form-control" required name="sqft" type="number" min="0" max="100000" value="42069">
     </div>
     <div class="mb-3 col-4">
@@ -24,7 +28,7 @@
       <input class="form-control" required name="imgUrl" type="url" maxlength="500" placeholder="https://...">
     </div>
     <div class="mb-3 col-6">
-      <label for="house-color">Color</label>
+      <label for="house-color">Home Color</label>
       <input class="form-control" name="color" type="color" >
     </div>
     <div class="mb-2 col-12 text-end">

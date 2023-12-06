@@ -9,7 +9,7 @@ import { Pop } from "../utils/Pop.js";
 export class HousesController{
   constructor(){
     console.log('🏚️ home home');
-    houseService.loadHouses()
+    // houseService.loadHouses()
     this.drawHomeHome() // HomeHome is houseCard
     AppState.on('houses', this.drawHomeHome) 
   }
