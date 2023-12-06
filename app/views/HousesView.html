@@ -1,0 +1,35 @@
+<section class="row">
+<h1 class="text-primary text-center">Houses Page</h1>
+</section>
+  <form onsubmit="app.HousesController.createHouse()"  class="row bg-white shadow mb-5 rounded">
+    <div class="col-12 text-center my-2">List Your Home</div>
+    <div class="mb-3 col-4">
+      <label for="house-bedrooms">Bedrooms</label>
+      <input class="form-control" required name="bedroom" type="number" min="0" max="100" value="2">
+    </div>
+    <div class="mb-3 col-4">
+      <label for="house-bathrooms">Bathrooms</label>
+      <input class="form-control" required name="bathroom" type="number" min="0" max="100" value="2">
+    </div>
+    <div class="mb-3 col-4">
+      <label for="house-sqft">Bathrooms</label>
+      <input class="form-control" required name="sqft" type="number" min="0" max="100000" value="42069">
+    </div>
+    <div class="mb-3 col-4">
+      <label for="house-price">Price [1-100000000]</label>
+      <input class="form-range" name="price" type="range" min="1" max="100000000" step="10" value="42069">
+    </div>
+    <div class="mb-3 col-8">
+      <label for="house-image">Picture of House</label>
+      <input class="form-control" required name="imgUrl" type="url" maxlength="500" placeholder="https://...">
+    </div>
+    <div class="mb-3 col-6">
+      <label for="house-color">Color</label>
+      <input class="form-control" name="color" type="color" >
+    </div>
+    <div class="mb-2 col-12 text-end">
+      <button type="submit" class="btn btn-primary"><i class="mdi mdi-plus"></i>Submit</button>
+    </div>
+  </form>
+<section class="row" id="home-home">
+</section>
